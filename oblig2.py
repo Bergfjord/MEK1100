@@ -80,7 +80,7 @@ def oppgave_b():
     plt.colorbar()
     plt_title = "Vectorfield Speed, gass"
     plt.title(plt_title)
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MEK1100\Oblig2\{plt_title}.pdf")
+    plt.show()
     plt.clf()
     
     limit = 1000
@@ -92,7 +92,7 @@ def oppgave_b():
     plt.colorbar()
     plt_title = "Vectorfield Speed, liquid"
     plt.title(plt_title)
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MEK1100\Oblig2\{plt_title}.pdf")
+    plt.show()
     plt.clf()
     
     plt.contour(x, y, z, levels=1000, cmap= "RdBu")
@@ -102,7 +102,7 @@ def oppgave_b():
     plt.colorbar()
     plt_title = "Vectorfield Speed"
     plt.title(plt_title)
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MEK1100\Oblig2\{plt_title}.pdf")
+    plt.show()
     plt.clf()
     
 
@@ -125,7 +125,7 @@ def oppgave_c():
     plt_rektangler()
     plt_title="Vectorfield"
     plt.title(plt_title)
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MEK1100\Oblig2\{plt_title}.pdf")
+    plt.show()
     plt.clf()
     
 
@@ -176,7 +176,7 @@ def oppgave_d():
     plt.colorbar()
     plt_title = "Divergence of vectorfield"
     plt.title(plt_title)
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MEK1100\Oblig2\{plt_title}.pdf")
+    plt.show()
     plt.clf()
     
 def oppgave_e():
@@ -240,7 +240,7 @@ def oppgave_e():
     plt.colorbar()
     plt_title = "Curl of vectorfield"
     plt.title(plt_title)
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MEK1100\Oblig2\{plt_title}.pdf")
+    plt.show()
     plt.clf()
     
     
@@ -253,7 +253,7 @@ def oppgave_e():
     plt.xlabel("x position")
     plt.ylabel("y position")
     plt.title("Vectorfield streamlines")
-    plt.savefig(fr"C:\Users\Anders sin PC\Documents\UIO\V22\MAT1110\Oblig1\Vectorfield streamlines.pdf")
+    plt.show()
     plt.clf()
 
 def oppgave_f():
@@ -364,6 +364,75 @@ if __name__ == "__main__":
 
 
 
-
-
-
+# Kjøreeksempel c:\>python oblig2.py
+# =============================================================================
+# oppgave_a()
+# matrix x has correct dimensions and size: True
+# matrix y has correct dimensions and size: True
+# matrix u has correct dimensions and size: True
+# matrix v has correct dimensions and size: True
+# vector xit has correct x-length: True
+# vector yit has correct x-length: True
+# x matrix difference between gridpoints is 0.5mm: True
+# y matrix difference between gridpoints is 0.5mm: True
+# y interval spans diameter of 100mm: True
+# 
+# oppgave_b()
+# Locator attempting to generate 1001 ticks ([0.0, ..., 1000.0]), which exceeds Locator.MAXTICKS (1000).
+# 
+# oppgave_c()
+# 
+# oppgave_d()
+# 
+# Results from two divergence caluclations (LHS and RHS, Gauss' theorem):
+# Surface integral: -11740.44211621365
+# Line integral:    -11740.442116213635
+# Difference: 1.4551915228366852e-11
+# 
+# oppgave_e()
+# 
+# Results from two curl caluclations (LHS and RHS, Grens theorem):
+# Surface integral: -25997.019444898324
+# Line integral:    -25997.019444898327
+# Difference: 3.637978807091713e-12
+# 
+# oppgave_f()
+# 
+# Line integral   : Curl of rectangle 0: 3095.8376854420057
+# Surface integral: Curl of rectangle 0: 3095.837685441991
+# 
+# Line integral   : Curl of rectangle 1: -58971.02035274107
+# Surface integral: Curl of rectangle 1: -58971.02035274108
+# 
+# Line integral   : Curl of rectangle 2: -45.08533659914792
+# Surface integral: Curl of rectangle 2: -45.085336599148924
+# 
+# oppgave_g()
+# 
+# Rectangle 0:
+# Divergence bottom: 1594.8147947210718
+# Divergence top:    -2032.1499329641288
+# Divergence left:   -19196.992492825088
+# Divergence right:  19655.88502439653
+# Line integral   : Divergence of rectangle 0: 21.557393328386297
+# Surface integral: Divergence of rectangle 0: 21.5573933283859
+# 
+# Rectangle 1:
+# Divergence bottom: -5131.173666473514
+# Divergence top:    -3688.42376249757
+# Divergence left:   -12744.859067516707
+# Divergence right:  13682.855773041552
+# Line integral   : Divergence of rectangle 1: -7881.6007234462395
+# Surface integral: Divergence of rectangle 1: -7881.60072344624
+# 
+# Rectangle 2:
+# Divergence bottom: -242.52548830520567
+# Divergence top:    291.53512698003465
+# Divergence left:   -1560.5800387411343
+# Divergence right:  1404.3067306552778
+# Line integral   : Divergence of rectangle 2: -107.26366941102765
+# Surface integral: Divergence of rectangle 2: -107.26366941102773
+# <Figure size 432x288 with 0 Axes>
+# 
+# 
+# =============================================================================
